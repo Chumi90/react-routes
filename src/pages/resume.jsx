@@ -6,7 +6,7 @@ function Resume(){
         <>
         <h1>Titulación</h1>
             {studies.map((study)=>(
-                <li>
+                <li key={study.id}>
                     <h3>{study.title}</h3>
                     <p>{study.institution}</p>
                     <p>{study.date}</p>
@@ -15,7 +15,7 @@ function Resume(){
             }
         <h1>Experiencia</h1>
             {experiences.map((experience)=>(
-                <li>
+                <li key={experience.id}>
                     <h3>{experience.title}</h3>
                     <p>{experience.company}</p>
                     <p>{experience.date}</p>

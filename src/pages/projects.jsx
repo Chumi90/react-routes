@@ -8,8 +8,8 @@ function Projects (){
         <h1>Proyectos del usuario</h1>
         <ul>
             {projects.map((userProject)=>(
-                <li>
-                    <Link to={userProject.url}>{userProject.name}</Link>
+                <li key={userProject.id}>
+                    <a href={userProject.url}>{userProject.name}</a>
                     <p>{userProject.description}</p>
                     <img src={userProject.img} alt={userProject.name} />
                 </li>
