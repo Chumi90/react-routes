@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import {studies, experiences} from './data/resume'
+import {studies, experiences} from '../data/resume'
 
 function Resume(){
     return (
